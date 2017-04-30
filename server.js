@@ -52,6 +52,11 @@ app.get('/bad', (request, response) => {
   })
 })
 
+app.get('/project', (request, response) => {
+  response.render('project.hbs', {
+  project: 'This is a new project'
+  })
+})
 
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`)

@@ -54,7 +54,7 @@ app.get('/bad', (request, response) => {
 
 app.get('/projects', (request, response) => {
   response.render('projects.hbs', {
-  pageTitle: 'My Projects'
+  pageTitle: 'My Projects',
   project: 'This is a new project'
   })
 })

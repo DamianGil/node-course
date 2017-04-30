@@ -52,8 +52,9 @@ app.get('/bad', (request, response) => {
   })
 })
 
-app.get('/project', (request, response) => {
-  response.render('project.hbs', {
+app.get('/projects', (request, response) => {
+  response.render('projects.hbs', {
+  pageTitle: 'My Projects'
   project: 'This is a new project'
   })
 })
@@ -61,3 +62,11 @@ app.get('/project', (request, response) => {
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`)
 })
+
+
+// Commands:
+// git add .
+// git commit -m ""
+// git push
+// heroku create (create a new application)
+// git push heroku
